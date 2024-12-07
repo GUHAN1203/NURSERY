@@ -14,7 +14,7 @@ return(
     <div id="carouselmain" class="carousel-inner">
       <div class="carousel-item active">
         
-        <img id="imgcarousel" class="bd-placeholder-img" src="/my-app/src/assets/carousel.jpg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+        <img id="imgcarousel" class="bd-placeholder-img" src="https://media.istockphoto.com/id/164963728/photo/beautiful-summer-garden.jpg?s=612x612&w=0&k=20&c=NeQjkyBlB_0RY8vHhqPPn--4lmdtqgolsxmyp_lLQKY=" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>
         <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
         <div class="container">
           <div class="carousel-caption text-start">
@@ -25,8 +25,8 @@ return(
       </div>
       <div class="carousel-item">
   
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-        <div class="container">
+      <img id="imgcarousel" class="bd-placeholder-img" src="https://images.pexels.com/photos/80453/poppy-field-of-poppies-flower-flowers-80453.jpeg?cs=srgb&dl=pexels-pixabay-80453.jpg&fm=jpg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+      <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>        <div class="container">
           <div class="carousel-caption">
             <h1>Another example headline.</h1>
             <p>Some representative placeholder content for the second slide of the carousel.</p>
@@ -36,8 +36,8 @@ return(
       </div>
       <div class="carousel-item">
 
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-        <div class="container">
+      <img id="imgcarousel" class="bd-placeholder-img" src="https://media.istockphoto.com/id/1390124540/photo/close-up-green-grass-field-with-tree-blur-park-background-spring-and-summer.jpg?s=612x612&w=0&k=20&c=P9P9vpEk3yfMcd6sxhkZaldpR_7XixI-dOVum457PXc=" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+      <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>        <div class="container">
           <div class="carousel-caption text-end">
             <h1>One more for good measure.</h1>
             <p>Some representative placeholder content for the third slide of this carousel.</p>
