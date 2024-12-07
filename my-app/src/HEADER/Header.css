@@ -1,0 +1,18 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.navbar{
+  background-color: rgb(139, 141, 38);/*navbar bg*/
+}
+#logo {
+  color: rgb(0, 0, 0);/* logo*/
+}
+#navbut{
+  color:transparent; /* hamburger*/
+  border-color: transparent;
+}
+#navbarNav a{
+  color: rgb(6, 235, 10);  /*nav items */
+}
+.navbar ul{
+  border-color:transparent 
+}
