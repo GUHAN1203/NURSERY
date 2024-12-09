@@ -1,0 +1,8 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+#myCarousel{
+    padding-top: 100px;
+}
+#imgcarousel{
+   height:900px;
+   width :100%;
+}
