@@ -1,0 +1,9 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+footer{
+    font-size: larger;
+}
+footer ul{
+
+    padding-bottom: 20px;
+}
