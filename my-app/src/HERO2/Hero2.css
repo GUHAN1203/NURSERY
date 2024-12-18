@@ -1,9 +1,19 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
-footer{
-    font-size: larger;
+#contact{
+    justify-items: center;
+    margin-top: 20px;
+   
 }
-footer ul{
 
-    padding-bottom: 20px;
+#address{
+    justify-content: space-around;
 }
+
+@media screen and (max-width: 601px) {
+    #address {
+        
+      justify-self: center;
+      display: inline-block;
+    }
+  }

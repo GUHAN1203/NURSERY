@@ -4,30 +4,62 @@ import "./Hero2.css"
 
 function Hero2(){
     return(
+        <div >
+            <div  id="contact" >
+           <h5 >    CONTACT US  </h5>
+           <br/>
 
-<div class="container ">
-<footer class="py-3 my-4 border-top ">
-    <ul class=" justify-content-center border-bottom pb-3 mb-3">
-      <ul class="nav justify-content-center d-flex">
-      <li class="ms-3"><a class="text-body-secondary" href="#"><img class="bi" width="50" height="50" src="/assets/images/FOOTER/instagram.png"alt="INSTAGRAM"></img></a></li>
-      <li class="ms-3"><a class="text-body-secondary" href="#"><img class="bi" width="50" height="50" src="/assets/images/FOOTER/twitter.png"alt="X"></img></a></li>
-      <li class="ms-3"><a class="text-body-secondary" href="#"><img class="bi" width="50" height="50" src="/assets/images/FOOTER/facebook.png"alt="FACEBOOK"></img></a></li>
-    </ul>
-    
-        <ul class="nav justify-content-center d-flex ">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About Us</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Products</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Consulting</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Gallery</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact Us</a></li>
+        </div>
+        <div id="address" class="d-flex">
+            <div>
+        <h3> JK FARMS & NURSERY</h3>
+           <br/>
+           <h5>SH 49, Sea Cliff Conclave, Akkarai, Panaiyur,
+            <br/> Chennai, Tamil Nadu 600119</h5>
+           <br/>
+           <h3>CALL : <h5>6382011788</h5> </h3>
+           <br/>
+           <h3>E-MAIL : jkfarms@gmail.com</h3>
+        </div>
 
-      </ul>
-    </ul>
-    
-    <p class="text-center text-body-secondary">© 2024 JK FARMS, ALRIGHTS RESERVED</p>
-  </footer>
-  </div>
+
+        <div>
+        <h3>HOURS</h3>
+           <br/>
+           <h3>Monday - Friday: 9:00AM–6:30PM
+            <br/>
+             Saturday- Sunday: 9:00AM–7:00PM</h3>
+
+
+        </div>
+
+        </div>
+
+        <div>
+           <br/>
+           <h3> SEE US IN PERSON !</h3>
+           <br/>
+           <h5>The best time to plant a tree was 20 years ago. The second best time is now.</h5>
+           <br/>
+
+
+                </div> 
+
+            <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.218490043949!2d80.24374567430168!3d12.89366766658366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525b64a08b4917%3A0x8c71c1b8893a7f2c!2sJ.%20K%20Farm%20and%20Nursery!5e0!3m2!1sen!2sin!4v1734421757295!5m2!1sen!2sin" width="100%" height="450" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+            
+
+
+
+
+
+
+
+        </div>
+
+
 
 
 
