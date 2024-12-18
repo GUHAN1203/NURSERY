@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
     margin: 0;
     background-color: #000;
     color: #eee;
-    font-family: Poppins;
     font-size: 12px;
     overflow-x: hidden;
 }
@@ -62,7 +60,7 @@ body{
     border: none;
     background-color: #eee;
     letter-spacing: 3px;
-    font-family: Poppins;
+    
     font-weight: 500;
 }
 .carousel .list .item .buttons button:nth-child(2){
@@ -264,3 +262,124 @@ body{
         font-size: 30px;
     }
 }
+
+  
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bgimg-1 {
+    background-image: url("https://cdn.pixabay.com/photo/2020/08/17/17/53/forest-5496072_1280.jpg");
+    min-height: 100vh;
+  }
+  
+  .bgimg-2 {
+    background-image: url("https://api.deepai.org/job-view-file/7ae60e32-24c9-4d03-b607-5d57fc8eb30d/outputs/output.jpg?art-image=true");
+    min-height: 100vh;
+  }
+  
+  .bgimg-3 {
+    background-image: url("https://images.unsplash.com/photo-1545063914-a1a6ec821c88?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    min-height: 100vh;
+  }
+  
+  .caption {
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+  }
+  .box-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  .box{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+  }
+
+  .box img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+  }
+  .overlay{
+    height: 10px;
+    width: 100%;
+    background: linear-gradient(transparent,#1c1c1c 58%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+  }
+  .overlay h3{
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 40%;
+    
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  .overlay a{
+    margin-top: 10px;
+    color: #262626;
+    text-decoration: none;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 15px;
+  }
+  
+  .boxLhover img{
+    transform: scale(1.2);
+  }
+  .box:hover .overlay{
+    height: 100%;
+  }
+  
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+       
+      }
+    
+
+    .caption {
+        position: relative; /* Changes from absolute to relative */
+        display: block;/* Ensures the caption takes up the full width as a block element */
+        text-align: center; /* Keeps the text centered */
+        margin-top: 20px;   /* Adds spacing above the caption if needed */
+    }
+    
+}
+
+
