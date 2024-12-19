@@ -5,15 +5,8 @@
     margin-top: 20px;
    
 }
-
-#address{
-    justify-content: space-around;
+#seeus{
+    justify-items: center;
+    font-weight: bolder;
+    
 }
-
-@media screen and (max-width: 601px) {
-    #address {
-        
-      justify-self: center;
-      display: inline-block;
-    }
-  }
