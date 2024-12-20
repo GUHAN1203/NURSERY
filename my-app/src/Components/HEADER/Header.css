@@ -1,7 +1,7 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 .navbar {
-  background: rgba(255, 255, 255, 0.1); /* Transparent background */
+  background: rgba(255, 255, 255, 0.25); /* Transparent background */
   backdrop-filter: blur(10px); /* Frosted glass effect */
   border-radius: 1px; /* Rounded corners */
   padding: 5px 10px;
@@ -21,14 +21,21 @@ max-height:70px;
 padding-left: 20px;
 } 
 
+ 
+#navbarNav a{
+  color: rgb(0, 0, 0);  
+  font-size: x-large;
+  text-decoration: none;
+}
 #navbarNav a:hover{
  
-  color: rgb(255, 0, 0);
+  color: rgb(72, 255, 0);
   font-size: xx-large;
 }
 
 .navbar ul{
   border-color:transparent;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: transparent;
+
   
 } 
