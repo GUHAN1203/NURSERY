@@ -49,9 +49,13 @@ function Header(){
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Gallery</a>
           </li>
+
+        <Link to="/contactUs">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
           </li>
+          </Link>
+
         </ul>
       </div>
     </div>
