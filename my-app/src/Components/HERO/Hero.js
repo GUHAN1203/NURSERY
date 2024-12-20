@@ -8,10 +8,10 @@ function Hero(){
   const thumbnailRef = useRef(null);
   
   const sliderItems = [
-    '/assets/images/Products/img1.jpg',
-    '/assets/images/Products/img2.jpg',
-    '/assets/images/Products/img3.jpg',
-    '/assets/images/Products/img4.jpg'
+    '/assets/images/HERO/carousel1.jpg',  
+    '/assets/images/HERO/carousel2.jpg',
+    '/assets/images/HERO/carousel3.jpg',
+    '/assets/images/HERO/carousel4.jpg',
   ];
   
   // Handle the Next button click
@@ -44,12 +44,10 @@ function Hero(){
         <div className="item">
           <img src={sliderItems[currentSlide]} alt="Product Slide" />
           <div className="content">
-            <div className="author">LUNDEV</div>
-            <div className="title">DESIGN SLIDER</div>
-            <div className="topic">ANIMAL</div>
-            <div className="des">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi...</p>
-            </div>
+            <div className="author">  WELCOME TO </div>
+            <div className="title"> JK FARMS & NURSERY </div>
+        
+            
           </div>
         </div>
       </div>
