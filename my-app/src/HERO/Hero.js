@@ -1,66 +1,77 @@
-
-
-
+import React, { useState, useEffect, useRef } from 'react';
 import './Hero.css';
 
 function Hero(){
-return(
-
-<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-    </div>
-    <div id="carouselmain" class="carousel-inner">
-      <div class="carousel-item active">
-        
-        <img id="imgcarousel" class="bd-placeholder-img" src="https://media.istockphoto.com/id/164963728/photo/beautiful-summer-garden.jpg?s=612x612&w=0&k=20&c=NeQjkyBlB_0RY8vHhqPPn--4lmdtqgolsxmyp_lLQKY=" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>
-        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
+  const [currentSlide, setCurrentSlide] = useState(0);  // Track the current slide index
+  const [timeAutoNext] = useState(5000); // Auto slide duration
+  const sliderRef = useRef(null);
+  const thumbnailRef = useRef(null);
   
-      <img id="imgcarousel" class="bd-placeholder-img" src="https://images.pexels.com/photos/80453/poppy-field-of-poppies-flower-flowers-80453.jpeg?cs=srgb&dl=pexels-pixabay-80453.jpg&fm=jpg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>
-      <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-              <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
+  const sliderItems = [
+    '/assets/images/Products/img1.jpg',
+    '/assets/images/Products/img2.jpg',
+    '/assets/images/Products/img3.jpg',
+    '/assets/images/Products/img4.jpg'
+  ];
+  
+  // Handle the Next button click
+  const nextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % sliderItems.length);
+  };
+  
+  // Handle the Previous button click
+  const prevSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide - 1 + sliderItems.length) % sliderItems.length);
+  };
+  
+  // Auto next slide functionality
+  useEffect(() => {
+    const autoNext = setInterval(nextSlide, timeAutoNext);
+    return () => clearInterval(autoNext);  // Cleanup the interval when the component unmounts
+  }, [timeAutoNext]);
 
-      <img id="imgcarousel" class="bd-placeholder-img" src="https://media.istockphoto.com/id/1390124540/photo/close-up-green-grass-field-with-tree-blur-park-background-spring-and-summer.jpg?s=612x612&w=0&k=20&c=P9P9vpEk3yfMcd6sxhkZaldpR_7XixI-dOVum457PXc=" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>
-      <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-              <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+  // Reset the auto slide timer every time the slide changes
+  useEffect(() => {
+    const autoNext = setTimeout(nextSlide, timeAutoNext);
+    return () => clearTimeout(autoNext);
+  }, [currentSlide, timeAutoNext]);
+
+  return (
+    <div>
+    <div className="carousel" ref={sliderRef}>
+      {/* Slider Area */}
+      <div className="list">
+        <div className="item">
+          <img src={sliderItems[currentSlide]} alt="Product Slide" />
+          <div className="content">
+            <div className="author">LUNDEV</div>
+            <div className="title">DESIGN SLIDER</div>
+            <div className="topic">ANIMAL</div>
+            <div className="des">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi...</p>
+            </div>
           </div>
         </div>
       </div>
+
+      {/* Thumbnail Area */}
+      <div className="thumbnail" ref={thumbnailRef}>
+        {sliderItems.map((item, index) => (
+          <div className="item" key={index}>
+            <img src={item} alt={`Thumbnail ${index + 1}`} />
+            <div className="content">
+              <div className="title">Name Slider</div>
+              <div className="description">Description</div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Time indicator (optional) */}
+      <div className="time"></div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-)
+    </div>
 
 
-}
+)}
 export default Hero
