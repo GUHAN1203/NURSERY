@@ -1,0 +1,31 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.navbar {
+  background: rgba(255, 255, 255, 0.1); /* Transparent background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  border-radius: 1px; /* Rounded corners */
+  padding: 5px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+#navbut{
+  border:transparent; 
+  color: transparent;
+} 
+
+
+#logo img{
+
+max-width :100%;
+max-height:70px;
+padding-left: 20px;
+} 
+
+#navbarNav a:hover{
+ 
+  color: black;
+}
+
+.navbar ul{
+  border-color:aqua; 
+} 
