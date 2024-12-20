@@ -29,7 +29,7 @@ function Header(){
 
           <li class="nav-item dropdown">
             <Link to="/product">
-          <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link active " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Products
           </a>
           <ul class="dropdown-menu">
