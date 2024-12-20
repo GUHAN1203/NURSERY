@@ -29,20 +29,13 @@ padding-left: 20px;
 }
 #navbarNav a:hover{
  
-<<<<<<< HEAD
   color: rgb(72, 255, 0);
-=======
-  color: rgb(255, 0, 0);
->>>>>>> f0f3f8b240cbc5fa3d31ea7d8b4d98792d9eb763
   font-size: xx-large;
 }
 
 .navbar ul{
   border-color:transparent;
-<<<<<<< HEAD
   background-color: transparent;
 
   
-=======
->>>>>>> f0f3f8b240cbc5fa3d31ea7d8b4d98792d9eb763
 } 
