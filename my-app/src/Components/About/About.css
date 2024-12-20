@@ -1,27 +1,67 @@
-* {
-    box-sizing: border-box;
-  }
+*{
+  box-sizing: border-box;
+}
+
+.founder1{
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+
+.founder2{
+  display: flex;
+  flex-direction: row-reverse;
   
-  /* Create two equal columns that floats next to each other */
-  .column {
-    float:left;
-    width: 50%;
-    padding: 10px;
-    height: max-content; /* Should be removed. Only for demonstration */
-  }
+}
+
+.column1{
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
   
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+}
+.column1 img{
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 10px;
+  width: 60%;
+
+}
+
+.column2{
+  width: 60%;
+  padding: 20px;
+  align-content: center;
+  text-align: center;
+  font-size: larger;
+  background-color: brown;
+  color: black;
+}
+
+.column2 p{
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px)
+{
+  .founder1{
+    display: flex;
+    flex-direction: column;
+    
   }
-  
-  @media screen and (max-width: 500px){
-  .column{
-  float: none;
-      display: block;
-      width:100%;
-      text-align:center;
+
+  .founder2{
+    display: flex;
+    flex-direction: column;
   }
+
+  .column1{
+    width: 100%;
   }
+  .column2{
+    width: 100%;
+  }
+}
+
+
