@@ -1,16 +1,17 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 .navbar {
-  background: rgba(255, 255, 255, 0.1); /* Transparent background */
-  backdrop-filter: blur(10px); /* Frosted glass effect */
+  background: rgba(255, 255, 255, 0.25); /* Transparent background */
+  backdrop-filter: blur(50px); /* Frosted glass effect */
   border-radius: 1px; /* Rounded corners */
   padding: 5px 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.10); /* Light shadow */
 }
 
 #navbut{
   border:transparent; 
   color: transparent;
+  
 } 
 
 
@@ -23,13 +24,22 @@ padding-left: 20px;
 
  
 #navbarNav a{
-  color: whitesmoke;  
+  color: rgb(0, 0, 0);  
+  font-size:x-large;
+  
 }
 #navbarNav a:hover{
  
-  color: black;
+  color: rgb(255, 0, 0);
+  font-size: xx-large ;
 }
 
 .navbar ul{
-  border-color:aqua 
+  border-color: transparent;
+  
 } 
+#dropdown{
+  border:transparent; 
+  background-color: transparent;
+
+}
