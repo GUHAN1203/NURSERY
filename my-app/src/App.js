@@ -5,6 +5,7 @@ import Footer from './Components/FOOTER/Footer';
 import Product from './Pages/Product';
 import AboutUs from './Pages/AboutUs';
 import ContactUs from './Pages/ContactUs';
+import Consulting from './Pages/Consulting';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -19,6 +20,7 @@ function App() {
        <Route path="/product" element={<Product />} />
        <Route path="/aboutUs" element={<AboutUs />} />
        <Route path="/contactUs" element={<ContactUs />}/>
+       <Route path="/consulting" element={<Consulting />}/>
 
        </Routes>
         <Footer />

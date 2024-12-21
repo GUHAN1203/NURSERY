@@ -42,10 +42,11 @@ function Header(){
           </ul>
           </Link>
         </li>
-
+         <Link to="/consulting">
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Consulting</a>
           </li>
+          </Link>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Gallery</a>
           </li>
