@@ -29,10 +29,13 @@ padding-left: 20px;
 }
 #navbarNav a:hover{
  
-  color: rgb(255, 0, 0);
+  color: rgb(72, 255, 0);
   font-size: xx-large;
 }
 
 .navbar ul{
   border-color:transparent;
+  background-color: transparent;
+
+  
 } 

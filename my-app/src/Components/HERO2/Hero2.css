@@ -1,12 +1,2 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
-#contact{
-    justify-items: center;
-    margin-top: 20px;
-   
-}
-#seeus{
-    justify-items: center;
-    font-weight: bolder;
-    
-}
