@@ -1,6 +1,7 @@
 import React from "react"
 import './Consult.css'
 
+
 function Consult(){
     return(
 
@@ -12,10 +13,11 @@ function Consult(){
 
     </div>
     <div class="consultcontent">
+      
         <div className="contenthead" >
         <h3 style={{ textAlign: 'center' }}>GARDEN MAINTAINENCE</h3>
       </div>
-      <br/>
+
 
       <div className='founder1'>
         <div className='section1'>

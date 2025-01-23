@@ -27,21 +27,13 @@ function Header(){
          
           
 
-          <li class="nav-item dropdown">
+         
             <Link to="/product">
-          <a class="nav-link active " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Products
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="#">Flowers</a>
-              
-              </li>
-            <li><a class="dropdown-item" href="#">Plants</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+            <li class="nav-item dropdown">
+            <a class="nav-link active" aria-current="page" href="#">Products</a>
+          </li>
           </Link>
-        </li>
+          
          <Link to="/consulting">
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Consulting</a>

@@ -1,115 +1,107 @@
-body{
-    margin: 0;
-    background-color: #fff;
-    color: #000000;
-    font-size: 12px;
-    overflow-x: hidden;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    position: relative;
-    opacity: 1;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-  }
-  .bgimg-1 {
-    background-image: url("https://cdn.pixabay.com/photo/2020/08/17/17/53/forest-5496072_1280.jpg");
-    min-height: 100vh;
-  }
-  
-  .bgimg-2 {
-    background-image: url("https://api.deepai.org/job-view-file/7ae60e32-24c9-4d03-b607-5d57fc8eb30d/outputs/output.jpg?art-image=true");
-    min-height: 100vh;
-  }
-  
-  .bgimg-3 {
-    background-image: url("https://images.unsplash.com/photo-1545063914-a1a6ec821c88?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    min-height: 100vh;
-  }
-  
-  .caption {
-    padding: 10px;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    color: whitesmoke;
-  }
-  .box-area{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-  }
-  .box{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
-  }
 
-  .box img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
-  }
-  .overlay{
-    height: 10px;
-    width: 100%;
-    background: linear-gradient(transparent,#1c1c1c 58%);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
+.cards {
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+}
+
+.cards h1 {
+  color: black;
+  padding-bottom: 1em;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.category-button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.category-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.category-button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #0056b3;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap into the next line */
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 15px;
+}
+
+.card {
+  width: calc(22% - 15px); /* Default: 4 cards per row */
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  text-align: center;
+  font-size: 14px;
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Media Query for max-width: 968px */
+@media screen and (max-width: 968px) {
+  .cards {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Stack categories and cards vertically */
+    align-items: center;    /* Center align for better responsiveness */
+  }
+  .categories {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap */
+    justify-content: center; /* Center-align buttons */
+    align-items: center; /* Vertically align buttons */
+    gap: 10px; /* Consistent spacing between buttons */
+    padding: 0 10px; /* Add padding for better alignment */
+  }
+
+  .category-button {
+    flex: 1 1 calc(45% - 10px); /* Equal-sized buttons, 2 per row */
+    max-width: calc(45% - 10px); /* Limit the width */
+    text-align: center; /* Ensure centered text */
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: row; /* Keep the cards horizontal */
+    flex-wrap: wrap; /* Cards wrap to the next row */
     justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
-  }
-  .overlay h3{
-    font-weight: 500;
-    margin-bottom: 5px;
-    margin-top: 40%;
-    font-size: 30px;
-    letter-spacing: 2px;
-  }
- 
-  .boxLhover img{
-    transform: scale(1.2);
-  }
-  .box:hover .overlay{
-    height: 100%;
-  }
-  
-  
-  /* Turn off parallax scrolling for tablets and phones */
-  @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-      background-attachment: scroll;
-    }
+    gap: 15px;
   }
 
-  @media screen and (max-width: 768px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-       
-      }
-    
-
-    .caption {
-        position: relative; /* Changes from absolute to relative */
-        display: block;/* Ensures the caption takes up the full width as a block element */
-        text-align: center; /* Keeps the text centered */
-        margin-top: 20px;   /* Adds spacing above the caption if needed */
-    }
-    
+  .card {
+    width: calc(50% - 15px); /* Two cards per row */
+  }
 }
-
-
