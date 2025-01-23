@@ -6,6 +6,7 @@ import Product from './Pages/Product';
 import AboutUs from './Pages/AboutUs';
 import ContactUs from './Pages/ContactUs';
 import Consulting from './Pages/Consulting';
+import ScrollToTop from './Pages/ScrollToTop';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -14,7 +15,9 @@ function App() {
    
     
         <BrowserRouter>
+        <ScrollToTop />
         <Header />
+
        <Routes>
        <Route path="/" element={<Home />} />
        <Route path="/product" element={<Product />} />

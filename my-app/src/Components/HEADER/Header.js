@@ -24,10 +24,6 @@ function Header(){
             <a class="nav-link active" aria-current="page" href="#">About Us</a>
           </li>
           </Link>
-         
-          
-
-         
             <Link to="/product">
             <li class="nav-item dropdown">
             <a class="nav-link active" aria-current="page" href="#">Products</a>
@@ -39,9 +35,6 @@ function Header(){
             <a class="nav-link active" aria-current="page" href="#">Consulting</a>
           </li>
           </Link>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Gallery</a>
-          </li>
 
         <Link to="/contactUs">
           <li class="nav-item">
