@@ -1,12 +1,13 @@
 import React from 'react'
-import Hero from '../HERO/Hero'
+
 import './About.css'
 function About(){
   return (
     <div>
-      <div>
-        {/* <Hero /> */}
-      </div>
+      <div class="cover">
+        <h1 class="heading">ABOUT US</h1>
+        <img src="/assets/images/CONSULTING/cover.jpg"></img>
+    </div>
         <div style={{ color: 'black', backgroundColor: 'blue', textAlign: 'center', padding: '50px 80px', textAlign: 'justify' }}>
           <h3 style={{ textAlign: 'center' }}>Founders</h3>
         </div>
@@ -14,7 +15,7 @@ function About(){
 
         <div className='founder1'>
           <div className='column1'>
-           <img src='assets/images/Products/jersey.png'></img>
+           <img src='https://images.unsplash.com/photo-1737145907111-c3372a608a45?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D'></img>
           </div>
           <div className='column2'>
             <h2>R NAVEEN - CEO </h2>
@@ -34,7 +35,7 @@ function About(){
 
         <div className='founder2'>
           <div className='column1'>
-           <img src='assets/images/Products/jersey.png'></img>
+           <img src='https://plus.unsplash.com/premium_photo-1675873580364-8845f681b4ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D'></img>
           </div>
           <div className='column2'>
             <h2>R NAVEEN - CEO </h2>
@@ -55,7 +56,7 @@ function About(){
 
         <div className='founder3'>
           <div className='column1'>
-           <img src='assets/images/Products/jersey.png'></img>
+           <img src='https://images.unsplash.com/photo-1737535614450-ce142f8e2953?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8Ym84alFLVGFFMFl8fGVufDB8fHx8fA%3D%3D'></img>
           </div>
           <div className='column2'>
             <h2>R NAVEEN - CEO </h2>
