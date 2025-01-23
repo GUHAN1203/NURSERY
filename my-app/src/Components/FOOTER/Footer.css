@@ -7,12 +7,19 @@ footer{
 footer ul{
 
     padding-bottom: 20px;
+    
+}
+
+footer a{
+    text-decoration: none;
+
 }
 #foot{
 padding-top: 5px;
  background-color:rgb(58, 242, 7);
  padding-bottom: 1px;
 }
+
 footer img{
 
     background-color: rgb(255, 255, 255);

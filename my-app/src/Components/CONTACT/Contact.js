@@ -16,7 +16,7 @@ function Contact(){
 
          </div>
 
-        <div class="container ">
+        <div id="set" class="container ">
     <div class="row  g-lg-5 py-5">
       <div class="col-md-10 mx-auto  col-lg-5">
         <h1 class="display-4 fw-bold lh-1 text-body-emphasis  mb-3">JK FARMS & NURSERY</h1>
@@ -43,7 +43,7 @@ function Contact(){
 
 
       </div>
-      <div class="col  col-lg-5" id="seeus">
+      <div class="col  col-lg-8 " id="seeus">
             <br/>
             <h3  class="display- fw-bold"> SEE US IN PERSON !</h3>
             <br/>

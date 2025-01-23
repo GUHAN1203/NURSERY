@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 function Footer(){
     return(
@@ -20,12 +21,12 @@ function Footer(){
    
     
         <ul class="nav justify-content-center d-flex ">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About Us</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Products</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Consulting</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Gallery</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact Us</a></li>
+      <Link to="/"><li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li></Link>
+      <Link to="/aboutUs"><li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About Us</a></li></Link>
+      <Link to="product"><li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Products</a></li></Link>
+      <Link to="consulting"><li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Consulting</a></li></Link>
+      <Link to="/"><li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Gallery</a></li></Link>
+      <Link to="contactUs"><li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact Us</a></li></Link>
 
       </ul>
     </ul>

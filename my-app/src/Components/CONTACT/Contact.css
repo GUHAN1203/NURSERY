@@ -21,3 +21,11 @@
     width:120%;
     height: 450px;
 }
+
+@media screen and (max-width: 1368px)
+{
+
+    #set{
+        flex: none;
+    }
+}
