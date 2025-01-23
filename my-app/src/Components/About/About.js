@@ -9,7 +9,7 @@ function About(){
         <img src="/assets/images/CONSULTING/cover.jpg"></img>
     </div>
         <div style={{ color: 'black', backgroundColor: 'blue', textAlign: 'center', padding: '50px 80px', textAlign: 'justify' }}>
-          <h3 style={{ textAlign: 'center' }}>Founders</h3>
+          <h3 style={{ textAlign: 'center' }}>FOUNDER</h3>
         </div>
         <br/>
 
@@ -50,7 +50,7 @@ function About(){
         <br/>
 
         <div style={{ color: 'black', backgroundColor: 'blue', textAlign: 'center', padding: '50px 80px', textAlign: 'justify' }}>
-          <h3 style={{ textAlign: 'center' }}>Managing Director</h3>
+          <h3 style={{ textAlign: 'center' }}>MANAGING DIRECTOR</h3>
         </div>
         <br/>
 
