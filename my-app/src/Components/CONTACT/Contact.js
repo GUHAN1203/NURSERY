@@ -5,7 +5,7 @@ import "./Contact.css"
 function Contact(){
     return(
      
-<div>
+<div id="contact-us" >
   
 
 

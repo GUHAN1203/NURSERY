@@ -1,20 +1,24 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+*{
+    color: black;
+}
+
+
 
 #contact{
     justify-items: center;
     margin-top: 20px;
    
-    
-
-   
 }
+
+
+
+
 #seeus{
     width: 50%;
     justify-items: center;
     font-weight: bolder;
-    
-     
-    
+       
 }
 
 #map{
@@ -22,10 +26,15 @@
     height: 450px;
 }
 
-@media screen and (max-width: 1368px)
+@media screen and (max-width: 968px)
 {
 
     #set{
         flex: none;
+        h1{
+            text-align: center;
+        }
     }
+
+
 }
