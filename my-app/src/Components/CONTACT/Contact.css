@@ -2,30 +2,21 @@
 *{
     color: black;
 }
-
-
-
 #contact{
     justify-items: center;
     margin-top: 20px;
    
 }
-
-
-
-
 #seeus{
     width: 50%;
     justify-items: center;
     font-weight: bolder;
        
 }
-
 #map{
     width:120%;
     height: 450px;
 }
-
 @media screen and (max-width: 968px)
 {
 
