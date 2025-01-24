@@ -1,23 +1,23 @@
 *{
     box-sizing: border-box;
   }
-  .cover img{
+
+  .cover{
+    height: 100vh;
+    margin-top: -10px;
     width: 100%;
-    height: 600px;
     overflow: hidden;
     position: relative;
-    z-index: -1;
+  }
+  .cover img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .heading{
-   align-items: center; 
-   justify-content: center; 
-   width: 100%;
-   height: 60%;
-   display: flex;
-   font-size: 100px;
-    position: absolute;
-    color: white;
-    z-index: 2;
+    text-align: center;
+    align-content: center;
+    padding-top: 150px;
   }
 .contenthead{
 
@@ -74,15 +74,17 @@
     color: black;
   }
   
+  @media only screen and (max-width: 600px) {
+
+    .cover h1{
+      font-size: 3rem;
+    }
   
+  }
   
   @media screen and (max-width: 968px)
   {
 
-    .cover img {
-        height:450px;
-
-    }
     .founder1{
       display: flex;
       flex-direction: column;
