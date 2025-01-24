@@ -6,7 +6,7 @@ body {
 }
 
 body {
-  font-family: sans-serif;
+  font-family:serif;
   font-size: 14px;
   color: #000;
   margin: 0 ;
@@ -18,7 +18,11 @@ body {
     margin: 20px 0 20px 0;
 }
 .home-products h1{
-    font-size: 2.5rem;
+  padding: 1rem 1rem 1rem 1rem;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  align-content: center;
+  text-align: center;
 }
 
 .swiper {
@@ -46,6 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0.5rem;
+    cursor: pointer;
     background-color: white;
     height: fit-content;
 }
@@ -60,7 +65,7 @@ body {
     width: 90%;
     font-size: 1rem;
     border-radius: 5px;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 0.5rem;
     background: rgba(255, 255, 255, 0.25);
     color: black;
     text-decoration: none;
@@ -71,5 +76,16 @@ body {
 .card-btn:hover{
   font-size: 1.2rem;
   font-weight: bolder; 
+}
+
+@media only screen and (max-width: 728px){
+  .card-container{
+   width: 10rem;
+   cursor: pointer;
+  }
+  .card-btn:hover{
+   font-size: 1.1rem;
+
+  }
 }
 

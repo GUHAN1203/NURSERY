@@ -22,7 +22,7 @@ export default function Hero3() {
         effect={"coverflow"}
         grabCursor={true}
         autoplay={{
-          delay: 3000, // Delay between slides (3 seconds)
+          delay: 1000, // Delay between slides (3 seconds)
           disableOnInteraction: false, // Keeps autoplay after interaction          
           pauseOnMouseEnter: true, // Pause autoplay when hovering over the swiper
         }}

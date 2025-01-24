@@ -7,7 +7,7 @@ function Hero2(){
      
 <div>
 <div className="hero2-header">
-<h2>ABOUT NURSERY</h2>
+<h1>ABOUT NURSERY</h1>
 
         <div className='found1'>
         
@@ -16,10 +16,9 @@ function Hero2(){
           </div>
           <div className='col2'>
             <p>
-            Arcane, a visually stunning animated series set in the League of Legends universe, delves into the complex relationship between the sisters Vi and Jinx. 
+            Arcane,stunning animated series set in the League of Legends universe, delves into the complex relationship between the sisters Vi and Jinx. 
             As tensions escalate between the utopian city of Piltover and the oppressed undercity of Zaun, the sisters find 
-            themselves on opposing sides of a conflict fueled by arcane technology and clashing ideals. With its gripping narrative, stunning animation, 
-            and exploration of themes like power, corruption, and the consequences of progress, Arcane has captivated audiences worldwide.
+            themselves on opposing sides of a conflict fueled by arcane technology and clashing ideals. 
             </p>
           </div>
         </div>
