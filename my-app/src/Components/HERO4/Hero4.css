@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+  }
+
+  .conshead{
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    
+  }
+ .cons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   margin-right: 20px;
+   
+   
+  }
+  .consimg1,.consimg2{
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    box-sizing: border-box;
+  }
+
+  @media only screen and (max-width: 900px){
+
+
+.conscover{
+
+    width: fit-content;
+}
+
+    .cons{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      width: 100%;
+     
+     
+    }
+    .consimg1,.consimg2{
+      width: 50%;
+      padding: 20px;
+      text-align: center;
+      align-content: center;
+    }
+  }
+
+
