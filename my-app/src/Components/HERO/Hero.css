@@ -41,16 +41,15 @@ body{
 .carousel .list .item .author{
     font-weight: bold;
     letter-spacing: 10px;
-    font-size:50px;
-}
-.carousel .list .item .title,
-.carousel .list .item .topic{
-    font-size:100px;
-    font-weight: bold;
+    font-size:xx-large;
     line-height: 1.3em;
 }
-.carousel .list .item .topic{
-    color: #f1683a;
+.carousel .list .item .title
+{
+    letter-spacing: 10px;
+    font-size:xx-large;
+    font-weight: bold;
+    line-height: 1.3em;
 }
 .carousel .list .item .buttons{
     display: grid;
@@ -257,11 +256,28 @@ body{
         opacity: 0;
     }
 }
-@media screen and (max-width: 678px) {
+
+@media screen and (min-width: 728px) and (max-width:1023px){
     .carousel .list .item .content{
         padding-right: 0;
+        text-align: center;
+        padding-top: 100px;
+     
     }
     .carousel .list .item .content .title{
         font-size: 30px;
+        text-align: center;
+    }  
+}
+@media screen and (max-width: 678px) {
+    .carousel .list .item .content{
+        padding-right: 0;
+        text-align: center;
+        padding-top: 50px;
+     
     }
+    .carousel .list .item .content .title{
+        font-size: 30px;
+        text-align: center;
+    }  
 }
