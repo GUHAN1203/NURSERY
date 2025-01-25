@@ -51,7 +51,7 @@ body {
 }
 
 .card {
-  width: calc(18% - 15px); /* Default: 4 cards per row */
+  width: calc(18% - 15px); /* Default: 5 cards per row */
   padding: 10px;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
