@@ -24,6 +24,9 @@ position: absolute;
 color: white;
   z-index: 2;
 }
+img{
+  align-content: center;
+}
 
 .founder-heading{
   color: black; 
@@ -36,6 +39,7 @@ color: white;
   text-align: center;
   font-size: 2.5rem;
 }
+
 
 .founder1{
   display: flex;
@@ -102,7 +106,10 @@ color: white;
   box-sizing: border-box;
   border-radius: 10px;
   box-shadow: 10px;
-  width: 60%;
+  width: 50%;
+  height: auto;
+ 
+
 
 }
 
@@ -116,7 +123,7 @@ color: white;
 }
 
 .column2 p{
-  padding: 10px;
+  padding: 1px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
@@ -173,7 +180,7 @@ color: white;
     width: 100%;
   }
   .column2 p{
-    font-size: 1rem;
+    font-size: .5rem;
     padding: 0 20px;
   } 
 }
@@ -196,7 +203,7 @@ color: white;
     width: 100%;
   }
   .column2 p{
-    font-size: 1rem;
+    font-size: .75rem;
     padding: 0 20px;
   } 
 }

@@ -24,8 +24,8 @@ body {
 
 .category-button {
   padding: 10px 20px;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
+  border:none;
+  background-color:rgb(224, 232, 219);
   cursor: pointer;
   border-radius: 5px;
   font-size: 16px;
@@ -51,7 +51,7 @@ body {
 }
 
 .card {
-  width: calc(18% - 15px); /* Default: 5 cards per row */
+  width: calc(23% - 15px); /* Default: 5 cards per row */
   padding: 10px;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
@@ -99,7 +99,7 @@ body {
     flex-direction: row; /* Keep the cards horizontal */
     flex-wrap: wrap; /* Cards wrap to the next row */
     justify-content: center;
-    gap: 15px;
+    gap: 25px;
   }
 
   .card {

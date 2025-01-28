@@ -21,6 +21,7 @@ function Hero2(){
             themselves on opposing sides of a conflict fueled by arcane technology and clashing ideals. 
             </p>
           </div>
+          
         </div>
   </div>
   </div>

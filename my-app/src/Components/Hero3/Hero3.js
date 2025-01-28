@@ -29,7 +29,7 @@ export default function Hero3() {
         }}
         loop={true}
         centeredSlides={true}
-        slidesPerView={"auto"}
+        slidesPerView={"6"}
         coverflowEffect={{
           rotate: 5,
           stretch: -30,
@@ -58,6 +58,16 @@ export default function Hero3() {
             </div>
           
         </SwiperSlide>
+
+
+        <SwiperSlide>
+        <div className='card-container'>
+        <img src="https://plus.unsplash.com/premium_photo-1676475964992-6404b8db0b53?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className='card-img'/>
+            <a href='product' className='card-btn'>MANURES</a>
+            </div>
+          
+        </SwiperSlide>
+        
         <SwiperSlide>
         <div className='card-container'>
         <img src="https://plus.unsplash.com/premium_photo-1676475964992-6404b8db0b53?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className='card-img'/>
@@ -85,7 +95,7 @@ export default function Hero3() {
         <SwiperSlide>
         <div className='card-container'>
         <img src="https://images.unsplash.com/photo-1495975295218-a59edae1540a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTExfHxmbG93ZXJzfGVufDB8MXwwfHx8MA%3D%3D" className='card-img'/>
-            <a href='product' className='card-btn'>FERTILIZERS & MANURES</a>
+            <a href='product' className='card-btn'>FERTILIZERS</a>
             </div>
         </SwiperSlide>
       </Swiper>

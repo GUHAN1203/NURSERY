@@ -7,49 +7,76 @@
     padding: 20px;
     font-size: 2.5rem;
     font-weight: bolder;
-    
   }
- .cons{
+  .cons{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-   margin-right: 20px;
+    justify-content:space-around;
+    width:100%; 
+    gap: 40px;
+    padding: 10px 10px;
    
    
+  }
+  .consimg1 img{
+    width: 100%;
+    height: auto;
+    
+  }
+  .consimg2 img{
+    width: 100%;
+    height:auto;
   }
   .consimg1,.consimg2{
-    width: 50%;
-    padding: 20px;
+
+    border-radius: 20%;
     text-align: center;
-    align-content: center;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+
+  }
+  .cons-btn{
+   
+    width: 100%;
+    text-align: center;
+    background-color: rgb(239, 231, 231);
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
   }
 
-  @media only screen and (max-width: 900px){
 
+  @media only screen and (max-width: 768px){
 
-.conscover{
-
-    width: fit-content;
-}
 
     .cons{
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 30px;
-      width: 100%;
-     
-     
-    }
-    .consimg1,.consimg2{
-      width: 50%;
-      padding: 20px;
-      text-align: center;
-      align-content: center;
-    }
+      justify-content:center;
+       object-fit: contain;
+       gap: 40px;
+       padding: 20px 20px;
+    
+  }
+  .consimg1 img{
+    width: 100%;
+    height: auto;
+  }
+  .consimg2 img{
+    width: 100%;
+    height: auto;
+  }
+  
+
+
+
+
+
+
   }
 
 

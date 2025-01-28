@@ -10,10 +10,12 @@ const Hero4 = () => {
         <h1 className='conshead'>CONSULTING</h1>
     <div className='cons'>
       <div className='consimg1'>
-      <img src="/assets/images/CONSULTING/gardenmaintain.jpg"></img>
+      <a href='consulting' ><img src="/assets/images/CONSULTING/gardenmaintain.jpg"></img></a>
+      <a href='consulting' className='cons-btn'>GARDENING</a>
       </div>
       <div className='consimg2'>
-      <img src="/assets/images/CONSULTING/gardenmaintain.jpg"></img>
+      <a href='consulting' ><img src="/assets/images/CONSULTING/gardenmaintain.jpg"></img></a>
+      <a href='consulting' className='cons-btn'>STONESCAPING</a>
       </div>
     </div>
     </div>
