@@ -15,7 +15,7 @@ function App() {
    
     
         <BrowserRouter>
-        {/* <ScrollToTop /> */}
+        <ScrollToTop />
         <Header />
 
        <Routes>
