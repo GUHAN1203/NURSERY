@@ -2,7 +2,7 @@
 body{
     margin: 0;
     background-color: #ffffff;
-    color: #eee;
+    color: black;
     font-family: Poppins;
     font-size: 12px;
     overflow-x: hidden;
@@ -35,7 +35,7 @@ body{
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
-    color: #fff;
+    color: #000;
     text-shadow: 0 5px 10px #0004;
 }
 .carousel .list .item .author{
@@ -258,18 +258,31 @@ body{
 }
 
 @media screen and (min-width: 728px) and (max-width:1023px){
+    .carousel{
+        height: 80vh;
+    }
     .carousel .list .item .content{
         padding-right: 0;
         text-align: center;
-        padding-top: 100px;
-     
+        padding-top: 50px;
+        left: 55%;
+    }
+
+    .carousel .list .item .content .author{
+        font-size: 3.5rem;
+        text-align: center;
     }
     .carousel .list .item .content .title{
-        font-size: 30px;
+        font-size: 3.5rem;
         text-align: center;
     }  
 }
-@media screen and (max-width: 678px) {
+
+@media screen and (max-width: 320px) {
+
+    .carousel{
+        height: 80vh;
+    }
     .carousel .list .item .content{
         padding-right: 0;
         text-align: center;
@@ -280,4 +293,48 @@ body{
         font-size: 30px;
         text-align: center;
     }  
+
+    .col1 img{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 375px) and (min-width: 321px){
+    .carousel{
+        height: 70vh;
+    }
+    .carousel .list .item .content{
+        padding-right: 0;
+        text-align: center;
+        padding-top: 50px;
+     
+    }
+    .carousel .list .item .content .title{
+        font-size: 30px;
+        text-align: center;
+    }  
+
+    .col1 img{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 376px){
+    .carousel{
+        height: 70vh;
+    }
+    .carousel .list .item .content{
+        padding-right: 0;
+        text-align: center;
+        padding-top: 30px;
+     
+    }
+    .carousel .list .item .content .title{
+        font-size: 30px;
+        text-align: center;
+    }  
+
+    .col1 img{
+        width: 50%;
+    }
 }

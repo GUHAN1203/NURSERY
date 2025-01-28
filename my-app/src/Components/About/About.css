@@ -1,52 +1,39 @@
 *{
-  
   box-sizing: border-box;
 }
 
-body{
-  background-color: rgb(158, 209, 138);
-}
-h2{
-  color: black;
- 
-}
 .cover{
-  height: 100vh;
-    margin-top: -10px;
+    height: 80vh;
     width: 100%;
     overflow: hidden;
     position: relative;
 }
-.cover h1{
-text-align: center;
-align-content: center;
-padding-top: 150px;
-}
 .cover img{
-  width: 100%;
-    height: 100%;
+    width: 100%;
+    height: 80vh;
     object-fit: cover;
 }
-.heading{
+.about-heading{
  align-items: center; 
  justify-content: center; 
  width: 100%;
  height: 60%;
  display: flex;
  font-size: 100px;
-  position: absolute;
-  color: white;
+position: absolute;
+color: white;
   z-index: 2;
 }
 
 .founder-heading{
   color: black; 
   background-color: rgb(158, 209, 138);
-  padding: 20px 0 0 0 ;
+  padding: 20px 0 20px 0 ;
 }
 
 .founder-heading h1{
   font-weight: bolder;
+  text-align: center;
   font-size: 2.5rem;
 }
 
@@ -60,6 +47,7 @@ padding-top: 150px;
 
 .founder1 h2{
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .founder1 p {
@@ -70,10 +58,14 @@ padding-top: 150px;
 .founder2{
   display: flex;
   flex-direction: row-reverse;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .founder2 h2{
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .founder2 p {
@@ -84,11 +76,15 @@ padding-top: 150px;
 .founder3{
   display: flex;
   flex-direction: row;
+
   height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .founder3 h2{
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .founder3 p {
@@ -98,7 +94,7 @@ padding-top: 150px;
 
 .column1{
   width: 40%;
-  padding: 20px;
+  padding: 20px 0 ;
   text-align: center;
   
 }
@@ -112,7 +108,7 @@ padding-top: 150px;
 
 .column2{
   width: 60%;
-  padding: 20px;
+  padding: 20px 0 0;
   align-content: center;
   text-align: center;
   font-size: larger;
@@ -123,37 +119,29 @@ padding-top: 150px;
   padding: 10px;
 }
 
-@media only screen and (max-width: 600px) {
-
-  .cover h1{
-    font-size: 3.5rem;
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .about-heading{
+    font-size: 4rem;
   }
-  .founder-heading h1{
-    font-size: 1.5rem;
+  .column1{ 
+    align-content: center;
+    
+  }
+  .column2 p{
+    font-size: 1rem;
   }
 
 }
 
-@media screen and (max-width: 968px)
+@media only screen and (max-width: 320px) /* mobile phones */
 {
-  .heading{
-    font-size: small;
+  .about-heading{
+    font-size: 3.2rem;
   }
-  .founder1{
+  .founder1,.founder2,.founder3{
     display: flex;
     flex-direction: column;
   }
-
-  .founder2{
-    display: flex;
-    flex-direction: column;
-  }
-  .founder3{
-    display: flex;
-    flex-direction: column;
-    
-  }
-
 
   .column1{
     width: 100%;
@@ -161,6 +149,75 @@ padding-top: 150px;
   .column2{
     width: 100%;
   }
+  .column2 p{
+    font-size: 1rem;
+    padding: 0 20px;
+  } 
+}
+
+@media screen and (max-width: 375px) and (min-width: 321px){
+  .about-heading{
+    font-size: 3.2rem;
+  }
+  .founder1,.founder2,.founder3{
+    display: flex;
+    flex-direction: column;
+  }
+  .column1{
+    width: 100%;
+  }
+  .column1 img{
+    width: 50%;
+  }
+  .column2{
+    width: 100%;
+  }
+  .column2 p{
+    font-size: 1rem;
+    padding: 0 20px;
+  } 
+}
+
+@media screen and (max-width: 600px) and (min-width: 376px){
+  .about-heading{
+    font-size: 3.2rem;
+  }
+  .founder1,.founder2,.founder3{
+    display: flex;
+    flex-direction: column;
+  }
+  .column1{
+    width: 100%;
+  }
+  .column1 img{
+    width: 50%;
+  }
+  .column2{
+    width: 100%;
+  }
+  .column2 p{
+    font-size: 1rem;
+    padding: 0 20px;
+  } 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .about-heading{
+    font-size: 3.2rem;
+    top: 20%;
+  }
+
+  .cover{
+    height: 60vh;
+  }
+  .cover img{
+    height: 60vh;
+  }
+
+  .column2 p{
+    font-size: 1rem;
+    padding: 0 20px;
+  } 
 }
 
 

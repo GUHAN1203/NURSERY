@@ -78,14 +78,58 @@ body {
   font-weight: bolder; 
 }
 
-@media only screen and (max-width: 728px){
-  .card-container{
-   width: 10rem;
-   cursor: pointer;
-  }
-  .card-btn:hover{
-   font-size: 1.1rem;
 
+@media only screen and (max-width: 320px) /* mobile phones */
+{
+.home-products{
+  margin: 0;
+}
+.card-container{
+  width: 8rem;
+  cursor: pointer;
+ }
+ .card-btn{
+  font: 1em sans-serif;
+ }
+ .card-btn:hover{
+  font-size: 0.9rem;
+ }
+}
+
+@media screen and (max-width: 375px) and (min-width: 321px){
+
+  .home-products{
+    margin: 0;
   }
+  .card-container{
+    width: 10rem;
+    cursor: pointer;
+   }
+   .card-btn:hover{
+    font-size: 0.9rem;
+   }
+}
+
+@media screen and (max-width: 600px) and (min-width: 376px){
+  .home-products{
+    margin: 0;
+  }
+  .card-container{
+    width: 10rem;
+    cursor: pointer;
+   }
+   .card-btn:hover{
+    font-size: 0.9rem;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .card-container{
+    width: 10rem;
+    cursor: pointer;
+   }
+   .card-btn:hover{
+    font-size: 0.9rem;
+   }
 }
 

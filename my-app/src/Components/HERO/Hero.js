@@ -8,10 +8,10 @@ function Hero(){
   const thumbnailRef = useRef(null);
   
   const sliderItems = [
-    '/assets/images/HERO/carousel1.jpg',  
-    '/assets/images/HERO/carousel2.jpg',
-    '/assets/images/HERO/carousel3.jpg',
-    '/assets/images/HERO/carousel4.jpg',
+    // '/assets/images/HERO/carousel1.jpg',  
+    // '/assets/images/HERO/carousel2.jpg',
+    // '/assets/images/HERO/carousel3.jpg',
+    // '/assets/images/HERO/carousel4.jpg',
   ];
   
   // Handle the Next button click
