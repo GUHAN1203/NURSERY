@@ -5,11 +5,11 @@ function About(){
   return (
     <div>
       <div class="cover">
-        <h1 class="heading">ABOUT US</h1>
+        <h1 class="about-heading">ABOUT US</h1>
         <img src="/assets/images/HERO/carousel1.jpg"></img>
     </div>
         <div  className='founder-heading'>
-          <h1 style={{ textAlign: 'center' }}>FOUNDERS</h1>
+          <h1>FOUNDERS</h1>
         </div>
         <div className='founder1'>
           <div className='column1'>
@@ -25,11 +25,11 @@ function About(){
             </p>
           </div>
         </div>
-        <br/>
-        <div style={{ color: 'black', backgroundColor: 'blue', textAlign: 'center', padding: '50px 80px', textAlign: 'justify' }}>
-          <h3 style={{ textAlign: 'center' }}>CEO</h3>
+
+        <div className='founder-heading'>
+          <h1>CEO</h1>
         </div>
-        <br/>
+
 
         <div className='founder2'>
           <div className='column1'>
@@ -45,13 +45,9 @@ function About(){
             </p>
           </div>
         </div>
-        <br/>
-
-        <div style={{ color: 'black', backgroundColor: 'blue', textAlign: 'center', padding: '50px 80px', textAlign: 'justify' }}>
-          <h3 style={{ textAlign: 'center' }}>MANAGING DIRECTOR</h3>
+        <div className='founder-heading'>
+          <h1>MANAGING DIRECTOR</h1>
         </div>
-        <br/>
-
         <div className='founder3'>
           <div className='column1'>
            <img src='https://images.unsplash.com/photo-1737535614450-ce142f8e2953?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8Ym84alFLVGFFMFl8fGVufDB8fHx8fA%3D%3D'></img>
@@ -67,7 +63,6 @@ function About(){
             </p>
           </div>
         </div>
-        <br/>
 
     </div>
   )
