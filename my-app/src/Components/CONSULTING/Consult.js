@@ -9,7 +9,7 @@ function Consult(){
 <div>
     <div class="cover-consult">
         <h1 class="heading">CONSULTING</h1>
-        <img src="/assets/images/CONSULTING/cover.jpg"></img>
+        {/* <img src="/assets/images/CONSULTING/cover.jpg"></img> */}
 
     </div>
     <div class="consultcontent">
@@ -24,7 +24,7 @@ function Consult(){
         <img src="/assets/images/CONSULTING/gardenmaintain.jpg"></img>
         </div>
         <div className='section2'>
-        <p>
+        <p style={{ textAlign:'justify',fontSize:"1.45rem"}}>
           At JK FARMS & NURSERY, we understand that a well-maintained garden is more than just beautiful – it's an investment in your property's value and your own enjoyment. Our experienced team offers a comprehensive range of services, including lawn care, planting, pruning, and weed control, all performed with a focus on sustainability and customer satisfaction. We utilize eco-friendly practices whenever possible and offer customized solutions to meet your unique needs and budget. Let us take the worry out of garden maintenance and help you create an outdoor space you'll love. Contact us today for a free consultation and discover the difference professional garden care can make.
           </p>
         </div>
@@ -53,7 +53,7 @@ function Consult(){
       </div>
       <br/>
 
-      <div div className='garden3'>
+      <div div className='garden1'>
         <div className='section1'>
         <img src="/assets/images/CONSULTING/stonescape2.jpg"></img>
         </div>
@@ -71,7 +71,7 @@ function Consult(){
       </div>
       <br/>
 
-      <div className='founder2'>
+      <div className='garden2'>
         <div className='section1'>
         <img src="/assets/images/CONSULTING/gardening.jpg"></img>
         </div>

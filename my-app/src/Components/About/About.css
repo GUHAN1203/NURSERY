@@ -1,6 +1,7 @@
-*{
+* {
   box-sizing: border-box;
 }
+
 
 .cover{
     height: 80vh;
@@ -115,7 +116,7 @@ img{
 
 .column2{
   width: 60%;
-  padding: 20px 0 0;
+  padding: 20px 20px;
   align-content: center;
   text-align: center;
   font-size: larger;
@@ -123,7 +124,7 @@ img{
 }
 
 .column2 p{
-  padding: 1px;
+  padding: 10px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
